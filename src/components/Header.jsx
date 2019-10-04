@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Header = () =>
-{
+const Header = () => (
     <header className="header">
-        <img className="header__img" src="./logoEggSee.png" alt="Logo :)"/>
+        <img className="header__img" src="./logoEggSee.png" alt="Logo :)" />
         <div className="header__menu">
             <div className="header__menu--user">
-                <img src="./user.jpg" alt="User img :)"/>
+                <img src="./user.jpg" alt="User img :)" />
                 <p>Pan77</p>
             </div>
             <ul>
@@ -15,6 +14,6 @@ const Header = () =>
             </ul>
         </div>
     </header>
-}
+)
 
 export default Header;
