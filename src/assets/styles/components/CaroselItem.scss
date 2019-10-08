@@ -1,0 +1,71 @@
+.carusel-item {
+    display: inline-block;
+    width: 184px;
+    height: 270px;
+    background: black;
+    margin: 10px 5px;
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+    white-space: normal;
+    color: white;
+
+  }
+  
+  .carusel-item:first-child {
+    margin-left: 20px;
+  }
+  
+  .carusel-item:hover {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: solid 10px white;
+    border-bottom: solid 10px white;
+
+  }
+
+  
+  
+  .carusel-item__cover {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carusel-item__dContainer {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.4s;
+    justify-content: space-between;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  
+  .carusel-item:hover .carusel-item__dContainer {
+    opacity: 100;
+  }
+  
+  .carusel-item__dContainer--title {
+    -webkit-text-stroke: 0.8px black;
+    font-size: 20px;
+  }
+  
+  .carusel-item-dContainer__container {
+    color: white;
+  }
+  
+  .carusel-item-dContainer__container--containerIcons {
+    display: flex;
+  }
+  
+  .carusel-item-dContainer__container--containerIcons img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .carusel-item-dContainer__container--descripcion {
+    margin-top: 0;
+  }

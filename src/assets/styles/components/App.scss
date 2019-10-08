@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-color: #1d1d1d;
+    font-family: "Roboto", sans-serif;
+  }
+
+*::-webkit-scrollbar
+{
+width: 4px;
+height: 4px;
+background: #0e0e0e
+}
+
+
+*::-webkit-scrollbar-thumb
+{
+background: #474747;
+border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover 
+{
+background: white;
+
+}
+
+.animarBodyEntrada
+{
+    animation-name: cambiarFondo;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes cambiarFondo
+{
+    from 
+    {
+        background: #1d1d1d;
+    }
+    to
+    {
+        background: white;
+    }
+}
+
+.animarBodysalida
+{
+    animation-name: cambiarFondo2;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes cambiarFondo2
+{
+  to
+    {
+        background: #1d1d1d;
+    }
+    from
+    {
+        background: white;
+    }
+}
+
+  

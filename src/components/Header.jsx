@@ -1,12 +1,16 @@
 import React from 'react';
+import '../assets/styles/components/Header.scss';
+import Logo from '../assets/img/logoEggSee.png';
+import UserLogo from '../assets/img/user.jpg';
 
 const Header = () =>
 {
+    return(
     <header className="header">
-        <img className="header__img" src="./logoEggSee.png" alt="Logo :)"/>
+        <img className="header__img" src={Logo} alt="Logo :)"/>
         <div className="header__menu">
             <div className="header__menu--user">
-                <img src="./user.jpg" alt="User img :)"/>
+                <img src={UserLogo} alt="User img :)"/>
                 <p>Pan77</p>
             </div>
             <ul>
@@ -15,6 +19,7 @@ const Header = () =>
             </ul>
         </div>
     </header>
+    )
 }
 
 export default Header;
